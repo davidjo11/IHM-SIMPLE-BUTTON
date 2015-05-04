@@ -1,0 +1,31 @@
+MONÔME: JOSIAS
+
+Toutes les questions ont été effectuées.
+
+Description brève des implémentations:
+
+	- de la classe principale Simplebutton prend en paramètres (voir aussi les attributs de la classe): 
+		
+		> canvas 	: un canvas (celui dans lequel il apparaitra)
+		> text   	: le texte à afficher dans le rectangle rect (voir attributs de la classe)
+		> b      	: le "BUTTON" de la souris (question 5)
+		> m      	: le "MODIFIER" (question 5)
+		> demiClick : le temps en ms d'un demi-click
+		
+	- du Demi-click: pressez dans le rectangle rect (celui qui contient le chaine de caractère "simple") 
+		et ne sortez pas du rectangle avant que les demiClick ms ne soient écoulées. Si vous sortez du 
+		rectangle alors le demi-clic aura échoué. 
+
+	- du Click + Demi-Click: cliquez sur l'arrière-plan (le canvas, partout sauf sur le rectangle), le 
+		rectangle prend dès alors la couleur magenta. Si vous effectuez un demi-clic de demiClick ms (ou
+		plus) sur l'arrière-plan alors vous avez réussi le demi-clic (le rectangle devient bleu). 
+		Par contre, si après le premier clic, vous pressez le button b ailleurs que sur l'arrière-plan
+		(sur le rectangle) alors le rectangle devient rouge et vous avez échoué. 
+
+	- du Double-Click: effectuez un premier clic sur le rectangle (si vous le faites en dehors vous êtes
+	 	dans l'un des deux cas précédents), il devient alors violet. Suite à ce clic, vous avez 1 
+	 	seconde pour en faire un autre. Si vous réussissez le rectangle devient noir autrement il devient
+		rouge.
+		
+Pour chaque cas, si vous échouez vous devez appuyez sur le MODIFIER m et cliquer avec le BUTTON b pour 
+vous débloquer et pouvoir retourner à l'état start.
